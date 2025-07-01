@@ -1,0 +1,38 @@
+[17-Mar-2024 20:53:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'colnursingsci.studentInfo' doesn't exist in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php:192
+Stack trace:
+#0 /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php(192): mysqli_query()
+#1 {main}
+  thrown in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php on line 192
+[17-Mar-2024 20:56:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'colnursingsci.studentInfo' doesn't exist in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php:192
+Stack trace:
+#0 /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php(192): mysqli_query()
+#1 {main}
+  thrown in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php on line 192
+[17-Mar-2024 21:00:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'colnursingsci.studentInfo' doesn't exist in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php:192
+Stack trace:
+#0 /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php(192): mysqli_query()
+#1 {main}
+  thrown in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php on line 192
+[18-Mar-2024 09:30:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'colnursingsci.studentInfo' doesn't exist in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php:192
+Stack trace:
+#0 /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php(192): mysqli_query()
+#1 {main}
+  thrown in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php on line 192
+[18-Mar-2024 09:53:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'colnursingsci.studentInfo' doesn't exist in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php:192
+Stack trace:
+#0 /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php(192): mysqli_query()
+#1 {main}
+  thrown in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php on line 192
+[18-Mar-2024 09:55:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'colnursingsci.studentInfo' doesn't exist in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php:192
+Stack trace:
+#0 /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php(192): mysqli_query()
+#1 {main}
+  thrown in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php on line 192
+[19-Mar-2024 23:08:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php on line 16
+[19-Mar-2024 23:13:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/b3cs9bw0hw8o/public_html/colnursingscigombe.gombeirs.com/pages/forms/addStudent.php on line 16

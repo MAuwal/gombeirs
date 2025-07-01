@@ -1,0 +1,27 @@
+#func{
+    text-align: left;
+    text-decoration: solid;
+    color:aquamarine;
+    background-color: black;
+
+b
+}
+
+#left-section {
+    width: 50%;
+    padding: 20px;
+}
+
+#right-section {
+    width: 50%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+</style>

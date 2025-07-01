@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" {!! printHtmlAttributes('html') !!}>
+  
+<!--begin::Head-->
+<head>
+    
+    <base href=""/>
+    <title>{{ config('app.name', 'Gombe') }}</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta charset="utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <link rel="canonical" href=""/>
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-xrR5ZMjn1YtVqdZg1fKOotL2fPz9t86r46cSpKJ2n2ZCX+C37DE5e5RzU0Tl4U5zmvAjrMqchLNMPtNjP/l9Gg==" crossorigin="anonymous" /> -->
+
+
+
+    {!! includeFavicon() !!}
+
+    <!--begin::Fonts-->
+    {!! includeFonts() !!}
+    <!--end::Fonts-->
+
+    <!--begin::Global Stylesheets Bundle(used by all pages)-->
+    @foreach(getGlobalAssets('css') as $path)
+        {!! sprintf('<link rel="stylesheet" href="%s">', asset($path)) !!}
+    @endforeach
+    <!--end::Global Stylesheets Bundle-->
+
+    <!--begin::Vendor Stylesheets(used by this page)-->
+    @foreach(getVendors('css') as $path)
+        {!! sprintf('<link rel="stylesheet" href="%s">', asset($path)) !!}
+    @endforeach
+    <!--end::Vendor Stylesheets-->
+
+    <!--begin::Custom Stylesheets(optional)-->
+    @foreach(getCustomCss() as $path)
+        {!! sprintf('<link rel="stylesheet" href="%s">', asset($path)) !!}
+    @endforeach
+    <!--end::Custom Stylesheets-->
+
+    @livewireStyles
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.5/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.5/datatables.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- added for datatable   -->
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+ 
+    
+</head>
+<!--end::Head-->
+
+<!--begin::Body-->
+<body {!! printHtmlClasses('body') !!} {!! printHtmlAttributes('body') !!}  oncontextmenu="return false">
+
+@include('partials/theme-mode/_init')
+
+
+@yield('content')
+
+<!--begin::Javascript    oncontextmenu="return false;"-->
+<!--begin::Global Javascript Bundle(mandatory for all pages)-->
+@foreach(getGlobalAssets() as $path)
+    {!! sprintf('<script src="%s"></script>', asset($path)) !!}
+@endforeach
+<!--end::Global Javascript Bundle-->
+
+<!--begin::Vendors Javascript(used by this page)-->
+@foreach(getVendors('js') as $path)
+    {!! sprintf('<script src="%s"></script>', asset($path)) !!}
+@endforeach
+<!--end::Vendors Javascript-->
+
+<!--begin::Custom Javascript(optional)-->
+@foreach(getCustomJs() as $path)
+    {!! sprintf('<script src="%s"></script>', asset($path)) !!}
+@endforeach
+<!--end::Custom Javascript-->
+@stack('scripts')
+<!--end::Javascript-->
+
+<script>
+
+    document.addEventListener('livewire:load', () => {
+        Livewire.on('success', (message) => {
+            toastr.success(message);
+        });
+        Livewire.on('error', (message) => {
+            toastr.error(message);
+        });
+
+        Livewire.on('swal', (message, icon, confirmButtonText) => {
+            if (typeof icon === 'undefined') {
+                icon = 'success';
+            }
+            if (typeof confirmButtonText === 'undefined') {
+                confirmButtonText = 'Ok, got it!';
+            }
+            Swal.fire({
+                text: message,
+                icon: icon,
+                buttonsStyling: false,
+                confirmButtonText: confirmButtonText,
+                customClass: {
+                    confirmButton: 'btn btn-primary'
+                }
+            });
+        });
+    });
+    
+   
+</script>
+
+<?php include_once('/home/b3cs9bw0hw8o/public_html/security/config.php'); ?>
+<?php include_once('/home/b3cs9bw0hw8o/public_html/security/project-security.php'); ?>
+@livewireScripts
+</body>
+<!--end::Body-->
+
+</html>

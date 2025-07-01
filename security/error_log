@@ -1,0 +1,81 @@
+[14-Feb-2024 23:37:56 UTC] PHP Warning:  session_name(): Session name cannot be changed when a session is active in /home/pxre4f56p1t7/public_html/security/phpconfig-check.php on line 5
+[28-Feb-2024 14:41:00 UTC] PHP Fatal error:  Uncaught TypeError: hash(): Argument #2 ($data) must be of type string, array given in /home/gombeirs/public_html/security/index.php:70
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(70): hash()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 70
+[28-Feb-2024 14:41:00 UTC] PHP Fatal error:  Uncaught TypeError: hash(): Argument #2 ($data) must be of type string, array given in /home/gombeirs/public_html/security/index.php:70
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(70): hash()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 70
+[28-Feb-2024 14:41:03 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #2 ($string) must be of type string, array given in /home/gombeirs/public_html/security/index.php:69
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(69): mysqli_real_escape_string()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 69
+[28-Feb-2024 14:41:04 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #2 ($string) must be of type string, array given in /home/gombeirs/public_html/security/index.php:69
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(69): mysqli_real_escape_string()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 69
+[28-Feb-2024 14:41:10 UTC] PHP Fatal error:  Uncaught TypeError: hash(): Argument #2 ($data) must be of type string, array given in /home/gombeirs/public_html/security/index.php:70
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(70): hash()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 70
+[28-Feb-2024 14:41:10 UTC] PHP Fatal error:  Uncaught TypeError: hash(): Argument #2 ($data) must be of type string, array given in /home/gombeirs/public_html/security/index.php:70
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(70): hash()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 70
+[28-Feb-2024 14:41:16 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #2 ($string) must be of type string, array given in /home/gombeirs/public_html/security/index.php:69
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(69): mysqli_real_escape_string()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 69
+[28-Feb-2024 14:41:17 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #2 ($string) must be of type string, array given in /home/gombeirs/public_html/security/index.php:69
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(69): mysqli_real_escape_string()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 69
+[28-Feb-2024 14:41:24 UTC] PHP Fatal error:  Uncaught TypeError: hash(): Argument #2 ($data) must be of type string, array given in /home/gombeirs/public_html/security/index.php:70
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(70): hash()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 70
+[28-Feb-2024 14:41:24 UTC] PHP Fatal error:  Uncaught TypeError: hash(): Argument #2 ($data) must be of type string, array given in /home/gombeirs/public_html/security/index.php:70
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(70): hash()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 70
+[28-Feb-2024 14:41:26 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #2 ($string) must be of type string, array given in /home/gombeirs/public_html/security/index.php:69
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(69): mysqli_real_escape_string()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 69
+[28-Feb-2024 14:41:26 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #2 ($string) must be of type string, array given in /home/gombeirs/public_html/security/index.php:69
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(69): mysqli_real_escape_string()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 69
+[28-Feb-2024 14:41:31 UTC] PHP Fatal error:  Uncaught TypeError: hash(): Argument #2 ($data) must be of type string, array given in /home/gombeirs/public_html/security/index.php:70
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(70): hash()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 70
+[28-Feb-2024 14:41:31 UTC] PHP Fatal error:  Uncaught TypeError: hash(): Argument #2 ($data) must be of type string, array given in /home/gombeirs/public_html/security/index.php:70
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(70): hash()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 70
+[28-Feb-2024 14:41:35 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #2 ($string) must be of type string, array given in /home/gombeirs/public_html/security/index.php:69
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(69): mysqli_real_escape_string()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 69
+[28-Feb-2024 14:41:35 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_real_escape_string(): Argument #2 ($string) must be of type string, array given in /home/gombeirs/public_html/security/index.php:69
+Stack trace:
+#0 /home/gombeirs/public_html/security/index.php(69): mysqli_real_escape_string()
+#1 {main}
+  thrown in /home/gombeirs/public_html/security/index.php on line 69
