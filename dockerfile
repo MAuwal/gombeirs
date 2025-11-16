@@ -23,7 +23,7 @@ COPY . .
 ENV COMPOSER_MEMORY_LIMIT=-1
 
 # Install dependencies
-RUN composer install --no-scripts --no-interaction --prefer-dist
+RUN composer install --no-scripts --no-interaction --prefer-dist --ignore-platform-req=ext-gd
 
 # Permissions
 RUN chown -R www-data:www-data /var/www/html
