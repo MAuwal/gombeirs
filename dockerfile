@@ -1,29 +1,29 @@
 FROM php:8.1-fpm
 
-# Set working directory
 WORKDIR /var/www/html
 
-# Install dependencies
+# System + PHP extensions required for Laravel
 RUN apt-get update && apt-get install -y \
     git \
     unzip \
     libzip-dev \
+    libonig-dev \
+    libxml2-dev \
     zip \
-    && docker-php-ext-install pdo_mysql zip
+    && docker-php-ext-install pdo_mysql zip \
+    && docker-php-ext-install bcmath
 
-# Install Composer
+# Install Composer from official image
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-# Copy application code
+# Copy project files
 COPY . .
 
-# Install PHP dependencies without running scripts
+# Avoid memory issues
+ENV COMPOSER_MEMORY_LIMIT=-1
+
+# Install dependencies
 RUN composer install --no-scripts --no-interaction --prefer-dist
 
-# Set proper permissions (optional but recommended)
-RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 755 /var/www/html/storage \
-    && chmod -R 755 /var/www/html/bootstrap/cache
-
-EXPOSE 9000
-CMD ["php-fpm"]
+# Permissions
+RUN chown -R www-data:www-data /var/www/html
